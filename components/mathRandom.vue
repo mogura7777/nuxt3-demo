@@ -10,8 +10,9 @@ const area = computed((): number => {
 setInterval((): void => {
   width.value = Math.round(Math.random() * 10);
   height.value = Math.round(Math.random() * 10);
-}, 1000);
+}, 4000);
 </script>
 <template>
+  <h2>ランダム計算</h2>
   <p>縦{{ height }}で横が{{ width }}の長方形の面積は{{ area }}</p>
 </template>
