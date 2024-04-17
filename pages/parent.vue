@@ -4,14 +4,14 @@
 const memberListInit = new Map<number, Member>();
 memberListInit.set(33456, {
   id: 33456,
-  name: "田中太郎",
+  name: "パーマン",
   email: "bow@example.com",
   points: 35,
-  note: "初回入会特典あり。",
+  note: "テキストテキストテキスト",
 });
 memberListInit.set(47783, {
   id: 47783,
-  name: "鈴木二郎",
+  name: "サトシ",
   email: "mue@example.com",
   points: 53,
 });

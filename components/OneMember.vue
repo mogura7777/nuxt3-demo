@@ -54,7 +54,7 @@ const pointUp = (): void => {
         <dd>{{ localNote }}</dd>
       </div>
     </dl>
-    <button v-on:click="pointUp">ポイント加算</button>
+    <button v-on:click="pointUp">ポイント追加</button>
   </section>
 </template>
 
