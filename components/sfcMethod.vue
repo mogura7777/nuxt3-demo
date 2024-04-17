@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <script setup lang="ts">
-const msg = ref("まだ");
+const msg = ref("初期値");
 const onButtonClick = (label: string, event: Event): void => {
   const target = event.target as HTMLButtonElement;
   const text = target.innerText;
@@ -11,5 +11,7 @@ const onButtonClick = (label: string, event: Event): void => {
 
 <template>
   <p>{{ msg }}</p>
-  <button v-on:click="onButtonClick('Hello', $event)">こんにちは</button>
+  <button @click="onButtonClick('ラベル', $event)">
+    ボタンの文字を取得する
+  </button>
 </template>
