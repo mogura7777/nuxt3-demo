@@ -3,7 +3,8 @@
 <template>
   <nav class="nav">
     <a href="/">Home</a>
-    <a href="/parent">Propsの受け渡し</a>
+    <a href="/parent">Props</a>
+    <a href="/state">State</a>
   </nav>
 </template>
 
