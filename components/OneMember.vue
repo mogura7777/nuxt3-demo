@@ -9,11 +9,17 @@ interface Props {
   points: number;
   note?: string;
 }
+//Emits型を定義。
+type Emits = {
+  incrementPoint: [id: number];
+};
+
 //Propsオブジェクトの設定。
 const props = defineProps<Props>();
-
+//Emitの設定。
+const emit = defineEmits<Emits>();
 //このコンポーネント内で利用するポイント数のテンプレート変数。
-const localPoints = ref(props.points);
+// const localPoints = ref(props.points);
 //Propsのnoteを加工する算出プロパティ。
 const localNote = computed((): string => {
   let localNote = props.note;
@@ -23,9 +29,11 @@ const localNote = computed((): string => {
   return localNote;
 });
 //［ポイント加算］ボタンをクリックしたときのメソッド。
+// const pointUp = (): void => {
+//   localPoints.value++;
+// };
 const pointUp = (): void => {
-  // props.points++;
-  localPoints.value++;
+  emit("incrementPoint", props.id);
 };
 </script>
 
@@ -47,7 +55,8 @@ const pointUp = (): void => {
       </div>
       <div class="box-in">
         <dt>保有ポイント</dt>
-        <dd>{{ localPoints }}</dd>
+        <!-- <dd>{{ localPoints }}</dd> -->
+        <dd>{{ points }}</dd>
       </div>
       <div class="box-in">
         <dt>備考</dt>

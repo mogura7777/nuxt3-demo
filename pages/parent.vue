@@ -1,5 +1,13 @@
 <!-- @format -->
 <script setup lang="ts">
+//会員情報インターフェース。
+interface Member {
+  id: number;
+  name: string;
+  email: string;
+  points: number;
+  note?: string;
+}
 //会員リストデータを用意。
 const memberListInit = new Map<number, Member>();
 memberListInit.set(33456, {
@@ -26,14 +34,16 @@ const totalPoints = computed((): number => {
   return total;
 });
 
-//会員情報インターフェース。
-interface Member {
-  id: number;
-  name: string;
-  email: string;
-  points: number;
-  note?: string;
-}
+//Emitにより実行されるメソッド。
+const onIncrementPoint = (id: number): void => {
+  //処理関数のidに該当する会員情報オブジェクトを取得。
+  const member = memberList.value.get(id);
+  //会員情報オブジェクトが存在するなら…
+  if (member != undefined) {
+    //ポイントをインクリメント。
+    member.points++;
+  }
+};
 </script>
 
 <template>
@@ -50,6 +60,7 @@ interface Member {
         v-bind:email="member.email"
         v-bind:points="member.points"
         v-bind:note="member.note"
+        v-on:incrementPoint="onIncrementPoint"
       />
     </div>
   </section>
