@@ -2,9 +2,10 @@
 
 <template>
   <nav class="nav">
-    <a href="/">Home</a>
-    <a href="/parent">Props</a>
-    <a href="/state">State</a>
+    <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="/parent">Props</NuxtLink>
+    <NuxtLink to="/state">State</NuxtLink>
+    <NuxtLink to="/routing">Routing</NuxtLink>
   </nav>
 </template>
 
