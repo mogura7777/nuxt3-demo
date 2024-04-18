@@ -18,8 +18,6 @@ type Emits = {
 const props = defineProps<Props>();
 //Emitの設定。
 const emit = defineEmits<Emits>();
-//このコンポーネント内で利用するポイント数のテンプレート変数。
-// const localPoints = ref(props.points);
 //Propsのnoteを加工する算出プロパティ。
 const localNote = computed((): string => {
   let localNote = props.note;
@@ -29,9 +27,6 @@ const localNote = computed((): string => {
   return localNote;
 });
 //［ポイント加算］ボタンをクリックしたときのメソッド。
-// const pointUp = (): void => {
-//   localPoints.value++;
-// };
 const pointUp = (): void => {
   emit("incrementPoint", props.id);
 };
@@ -55,7 +50,6 @@ const pointUp = (): void => {
       </div>
       <div class="box-in">
         <dt>保有ポイント</dt>
-        <!-- <dd>{{ localPoints }}</dd> -->
         <dd>{{ points }}</dd>
       </div>
       <div class="box-in">
