@@ -6,14 +6,14 @@ memberListInit.set(33456, {
   id: 33456,
   name: "パーマン",
   email: "bow@example.com",
-  points: 35,
+  points: 10,
   note: "テキストテキストテキスト",
 });
 memberListInit.set(47783, {
   id: 47783,
-  name: "サトシ",
+  name: "まっくす",
   email: "mue@example.com",
-  points: 53,
+  points: 7,
 });
 const memberList = ref(memberListInit);
 

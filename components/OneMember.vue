@@ -54,13 +54,13 @@ const pointUp = (): void => {
         <dd>{{ localNote }}</dd>
       </div>
     </dl>
-    <button v-on:click="pointUp">ポイント追加</button>
+    <button @click="pointUp">ポイント追加</button>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .box {
-  background-color: #fff5d6;
+  background-color: #fffcf2;
   padding: 20px;
   flex: 1;
   .box-in {
