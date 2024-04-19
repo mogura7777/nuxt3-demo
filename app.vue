@@ -1,7 +1,18 @@
 <!-- @format -->
 <script setup lang="ts">
 import type { Member } from "@/interfaces";
+const SITE_TITLE = "Nuxt3デモ";
 
+useHead({
+  titleTemplate: (titleChunk: string | undefined): string => {
+    let title = SITE_TITLE;
+    if (titleChunk != undefined) {
+      title = `${titleChunk} | ${SITE_TITLE}`;
+    }
+    return title;
+  },
+  // titleTemplate: `%s | ${SITE_TITLE}`
+});
 //会員情報リストをステートとして用意。
 useState<Map<number, Member>>("memberList", (): Map<number, Member> => {
   const memberListInit = new Map<number, Member>();
