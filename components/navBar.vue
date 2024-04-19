@@ -6,6 +6,7 @@
     <NuxtLink to="/parent">Props</NuxtLink>
     <NuxtLink to="/state">State</NuxtLink>
     <NuxtLink to="/routing">Routing</NuxtLink>
+    <NuxtLink to="/weather">weather</NuxtLink>
   </nav>
 </template>
 
