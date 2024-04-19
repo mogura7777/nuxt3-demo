@@ -48,7 +48,6 @@ const onIncrementPoint = (id: number): void => {
 
 <template>
   <section>
-    <NavBar />
     <p>全会員の保有ポイントの合計: {{ totalPoints }}</p>
     <div class="box-wrapper">
       <OneMember

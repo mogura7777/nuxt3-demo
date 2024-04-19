@@ -22,8 +22,7 @@ useState<Map<number, Member>>("memberList", (): Map<number, Member> => {
 });
 </script>
 <template>
-  <div>
-    <h1>APPページ</h1>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>

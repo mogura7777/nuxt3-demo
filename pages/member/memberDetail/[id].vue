@@ -2,7 +2,9 @@
 
 <script setup lang="ts">
 import type { Member } from "@/interfaces";
-
+definePageMeta({
+  layout: "member",
+});
 //ルートオブジェクトを取得。
 const route = useRoute();
 //会員情報リストをステートから取得。

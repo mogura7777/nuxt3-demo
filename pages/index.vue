@@ -2,7 +2,6 @@
 
 <template>
   <section>
-    <NavBar />
     <SfcMethod />
     <MathRandom />
     <Cocktail />

@@ -2,7 +2,9 @@
 
 <script setup lang="ts">
 import type { Member } from "@/interfaces";
-
+definePageMeta({
+  layout: "member",
+});
 //ルータオブジェクトを取得。
 const router = useRouter();
 //会員情報リストをステートから取得。

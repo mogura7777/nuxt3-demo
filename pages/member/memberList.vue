@@ -1,9 +1,11 @@
 <!-- @format -->
-
 <script setup lang="ts">
 import type { Member } from "@/interfaces";
 
-//会員情報リストをステートから取得。
+definePageMeta({
+  layout: "member",
+});
+
 const memberList = useState<Map<number, Member>>("memberList");
 </script>
 

@@ -1,6 +1,10 @@
 <!-- @format -->
+<script setup lang="ts">
+definePageMeta({
+  layout: "member",
+});
+</script>
 <template>
-  <NavBar />
   <nav id="breadcrumbs">
     <ul>
       <li>TOP</li>

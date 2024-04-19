@@ -17,6 +17,5 @@ useState<Map<number, Member>>("memberList", (): Map<number, Member> => {
 </script>
 
 <template>
-  <NavBar />
   <StateTheBaseSection />
 </template>
