@@ -7,6 +7,8 @@
     <NuxtLink to="/state">State</NuxtLink>
     <NuxtLink to="/routing">Routing</NuxtLink>
     <NuxtLink to="/weather">weather</NuxtLink>
+    <NuxtLink to="/pinia">pinia</NuxtLink>
+    <NuxtLink to="/other">other</NuxtLink>
   </nav>
 </template>
 

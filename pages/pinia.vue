@@ -3,6 +3,5 @@
 <template>
   <section>
     <Pinia />
-    <SfcMethod />
   </section>
 </template>

@@ -2,7 +2,8 @@
 
 <template>
   <section>
-    <Pinia />
     <SfcMethod />
+    <MathRandom />
+    <Cocktail />
   </section>
 </template>
