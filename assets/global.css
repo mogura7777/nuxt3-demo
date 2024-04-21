@@ -1,6 +1,5 @@
 /** @format */
 
-@charset "UTF-8";
 html,
 body,
 div,
@@ -155,4 +154,14 @@ img {
   text-align: center;
   margin: 20px 0;
   font-weight: bold;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 0 0 40px;
+}
+.nav__list {
+  list-style: none;
 }

@@ -23,14 +23,4 @@
   </nav>
 </template>
 
-<style scoped>
-.nav {
-  display: flex;
-  gap: 20px;
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-}
-.nav__list {
-  list-style: none;
-}
-</style>
+<style scoped></style>
