@@ -3,10 +3,9 @@
 <template>
   <header>
     <h1 class="ttl">メンバーレイアウト</h1>
-    <TheLoggedInSection />
     <NavBar />
   </header>
-  <main class="body">
+  <main class="main">
     <slot />
   </main>
 </template>

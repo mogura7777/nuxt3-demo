@@ -150,6 +150,12 @@ img {
   height: auto;
   width/***/: auto;
 }
+/* 共通CSS */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .ttl {
   text-align: center;
   margin: 20px 0;

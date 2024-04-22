@@ -3,10 +3,10 @@
 <template>
   <header>
     <h1 class="ttl">ミドルウェアサンプル</h1>
-    <TheLoggedInSection />
     <NavBar />
+    <TheLoggedInSection />
   </header>
-  <main>
+  <main class="main">
     <slot />
   </main>
 </template>

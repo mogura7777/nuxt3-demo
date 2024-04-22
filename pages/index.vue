@@ -1,5 +1,15 @@
 <!-- @format -->
+<script setup lang="ts">
+const PAGE_TITLE = "ミドルウェア";
 
+definePageMeta({
+  layout: "middleware",
+});
+
+useHead({
+  title: PAGE_TITLE,
+});
+</script>
 <template>
   <div class="container mt-5">
     <div class="row justify-content-center">

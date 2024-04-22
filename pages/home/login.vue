@@ -10,7 +10,15 @@ type UserType = {
   id: string;
   name: string;
 };
+const PAGE_TITLE = "ミドルウェア";
 
+definePageMeta({
+  layout: "middleware",
+});
+
+useHead({
+  title: PAGE_TITLE,
+});
 // formの初期値
 const loginId = ref("");
 const password = ref("");

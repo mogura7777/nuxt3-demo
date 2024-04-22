@@ -3,8 +3,13 @@
 <script setup lang="ts">
 definePageMeta({
   middleware: ["login"],
+  layout: "middleware",
 });
+const PAGE_TITLE = "ミドルウェア";
 
+useHead({
+  title: PAGE_TITLE,
+});
 type UserType = {
   id: string;
   name: string;

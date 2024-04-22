@@ -13,10 +13,10 @@
         <NuxtLink to="/middleware">middleware</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/login">login（middleware）</NuxtLink>
+        <NuxtLink to="/login">login</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/logout">logout（middleware）</NuxtLink>
+        <NuxtLink to="/logout">logout</NuxtLink>
       </li>
     </ul>
     <NuxtLink to="/other">other</NuxtLink>
