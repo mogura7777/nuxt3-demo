@@ -31,7 +31,7 @@ const localNote = computed((): string => {
 </script>
 
 <template>
-  <h1>会員管理</h1>
+  <h1 class="sttl">会員管理</h1>
   <nav id="breadcrumbs">
     <ul>
       <li><NuxtLink v-bind:to="{ name: 'routing' }">TOP</NuxtLink></li>

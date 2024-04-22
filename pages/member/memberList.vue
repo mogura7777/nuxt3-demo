@@ -16,9 +16,9 @@ const memberList = useState<Map<number, Member>>("memberList");
 </script>
 
 <template>
-  <h1>会員管理</h1>
+  <h1 class="sttl">会員管理</h1>
   <nav id="breadcrumbs">
-    <ul>
+    <ul class="breadcrumbs_list">
       <li><NuxtLink v-bind:to="{ name: 'routing' }">TOP</NuxtLink></li>
       <li>{{ PAGE_TITLE }}</li>
     </ul>

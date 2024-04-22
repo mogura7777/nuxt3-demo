@@ -12,7 +12,7 @@ useHead({
 </script>
 <template>
   <nav id="breadcrumbs">
-    <ul>
+    <ul class="breadcrumbs_list">
       <li>{{ PAGE_TITLE }}</li>
     </ul>
   </nav>

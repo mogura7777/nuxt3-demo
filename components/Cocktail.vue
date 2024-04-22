@@ -46,6 +46,8 @@ function getCocktailInfo(cocktailNo: number): string {
 </script>
 
 <template>
-  <p>現在のカクテル番号: {{ cocktailNo }}</p>
-  <p>{{ priceMsg }}</p>
+  <div class="box">
+    <p>現在のカクテル番号: {{ cocktailNo }}</p>
+    <p>{{ priceMsg }}</p>
+  </div>
 </template>

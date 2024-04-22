@@ -8,7 +8,7 @@ const cityList = useState<Map<number, City>>("cityList");
 
 <template>
   <section>
-    <h2>都市リスト</h2>
+    <h2 class="sttl">都市リスト</h2>
     <ul class="list">
       <li v-for="[id, city] in cityList" v-bind:key="id">
         <NuxtLink v-bind:to="{ name: 'FetchInfo-id', params: { id: id } }">

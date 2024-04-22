@@ -14,8 +14,8 @@ const routeUrl = ref("");
       <li><NuxtLink v-bind:to="{ name: 'routing' }">TOP</NuxtLink></li>
       <li>
         <NuxtLink v-bind:to="{ name: 'member-memberList' }"
-          >会員リスト</NuxtLink
-        >
+          >会員リスト
+        </NuxtLink>
       </li>
       <li>会員詳細情報</li>
     </ul>

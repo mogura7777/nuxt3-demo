@@ -10,8 +10,10 @@ const onButtonClick = (label: string, event: Event): void => {
 </script>
 
 <template>
-  <p>{{ msg }}</p>
-  <button @click="onButtonClick('ラベル', $event)">
-    ボタンの文字を取得する
-  </button>
+  <div class="box">
+    <p>{{ msg }}</p>
+    <button @click="onButtonClick('ラベル', $event)">
+      ボタンの文字を取得する
+    </button>
+  </div>
 </template>

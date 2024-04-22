@@ -161,6 +161,17 @@ img {
   margin: 20px 0;
   font-weight: bold;
 }
+.sttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.breadcrumbs_list {
+  background-color: rgb(249, 242, 211);
+  margin: 0 0 20px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
 .nav {
   display: flex;
   gap: 20px;
@@ -170,4 +181,7 @@ img {
 }
 .nav__list {
   list-style: none;
+}
+.box {
+  margin: 0 0 40px;
 }

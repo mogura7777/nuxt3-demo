@@ -17,7 +17,7 @@ const totalPoints = computed((): number => {
 
 <template>
   <section>
-    <h1>会員リスト</h1>
+    <h1 class="sttl">会員リスト</h1>
     <p>全会員の保有ポイントの合計: {{ totalPoints }}</p>
     <StateOneMember
       v-for="id in memberList.keys()"

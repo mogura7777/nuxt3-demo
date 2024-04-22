@@ -1,12 +1,16 @@
-<script setup lang="ts">
-import type {User} from "@/interfaces";
+<!-- @format -->
 
-const loginUser = useCookie<User|null>("loginUser");
+<script setup lang="ts">
+import type { User } from "@/interfaces";
+
+const loginUser = useCookie<User | null>("loginUser");
 </script>
 
 <template>
-	<section v-if="loginUser">
-		<p>{{loginUser.name}}さんがログイン中</p>
-		<p><NuxtLink v-bind:to="{name: 'logout'}">ログアウト</NuxtLink></p>
-	</section>
+  <section v-if="loginUser">
+    <div class="box">
+      <p>{{ loginUser.name }}さんがログイン中</p>
+      <p><NuxtLink v-bind:to="{ name: 'logout' }">ログアウト</NuxtLink></p>
+    </div>
+  </section>
 </template>

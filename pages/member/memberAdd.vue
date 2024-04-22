@@ -31,9 +31,9 @@ const onAdd = (): void => {
 </script>
 
 <template>
-  <h1>会員管理</h1>
+  <h1 class="sttl">会員管理</h1>
   <nav id="breadcrumbs">
-    <ul>
+    <ul class="breadcrumbs_list">
       <li><NuxtLink v-bind:to="{ name: 'routing' }">TOP</NuxtLink></li>
       <li>
         <NuxtLink v-bind:to="{ name: 'member-memberList' }"
