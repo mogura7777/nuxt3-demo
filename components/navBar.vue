@@ -8,6 +8,7 @@
     <NuxtLink to="/routing">Routing</NuxtLink>
     <NuxtLink to="/weather">weather</NuxtLink>
     <NuxtLink to="/pinia">pinia</NuxtLink>
+    <NuxtLink to="/food">food</NuxtLink>
     <ul class="nav__list">
       <li>
         <NuxtLink to="/middleware">middleware</NuxtLink>
