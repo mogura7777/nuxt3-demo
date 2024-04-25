@@ -2,6 +2,7 @@
 
 <template>
   <section>
+    <Animation />
     <SfcMethod />
     <MathRandom />
     <Cocktail />

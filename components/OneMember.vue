@@ -14,11 +14,8 @@ type Emits = {
   incrementPoint: [id: number];
 };
 
-//Propsオブジェクトの設定。
 const props = defineProps<Props>();
-//Emitの設定。
 const emit = defineEmits<Emits>();
-//Propsのnoteを加工する算出プロパティ。
 const localNote = computed((): string => {
   let localNote = props.note;
   if (localNote == undefined) {
@@ -26,7 +23,6 @@ const localNote = computed((): string => {
   }
   return localNote;
 });
-//［ポイント加算］ボタンをクリックしたときのメソッド。
 const pointUp = (): void => {
   emit("incrementPoint", props.id);
 };
