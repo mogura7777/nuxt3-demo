@@ -33,7 +33,7 @@ const cityList = useState<Map<number, City>>("cityList");
     <ul class="list">
       <li v-for="[id, city] in cityList" v-bind:key="id">
         <NuxtLink v-bind:to="{ name: 'WeatherInfo-id', params: { id: id } }">
-          {{ city.name }}の天気
+          {{ city.name }}の天気（composables）
         </NuxtLink>
       </li>
     </ul>
