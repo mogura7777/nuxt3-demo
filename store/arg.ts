@@ -1,29 +1,22 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+/** @format */
 
-export const useArgStore = defineStore('argStore', () => {
-  const count = ref(0)
+import { ref, computed } from "vue";
+import { defineStore } from "pinia";
+
+export const useArgStore = defineStore("argStore", () => {
+  const count = ref(0);
 
   // computer
-  const doubleCount = computed(() => count.value * 2)
+  const doubleCount = computed(() => count.value * 2);
 
   const Ncount = (n: number) => {
-      return computed(() => n * count.value)
-    }
+    return computed(() => n * count.value);
+  };
 
-  // function
-  function increment() {
-    count.value++
-  }
+  const increment = () => count.value++;
 
-  function incrementN(n: number) {
-    count.value += n
-  }
+  const incrementN = (n: number) => (count.value += n);
+  const reset = () => (count.value = 0);
 
-  // reset
-  function reset() {
-    count.value = 0
-  }
-
-  return { count, doubleCount, increment, Ncount, incrementN, reset }
-})
+  return { count, doubleCount, increment, Ncount, incrementN, reset };
+});

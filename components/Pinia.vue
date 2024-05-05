@@ -4,7 +4,7 @@
 import { ref } from "vue";
 import { useArgStore } from "@/store/arg";
 
-const N = ref(3);
+const Num = ref(3);
 
 const argStore = useArgStore();
 
@@ -13,7 +13,7 @@ const plusOne = (): void => {
 };
 
 const plusN = (): void => {
-  argStore.incrementN(N.value);
+  argStore.incrementN(Num.value);
 };
 
 const reset = (): void => {
@@ -24,7 +24,7 @@ const reset = (): void => {
 <template>
   <p class="mt-5">count: {{ argStore.count }}</p>
   <p>doubleCount: {{ argStore.doubleCount }}</p>
-  <p>Ncount: {{ argStore.Ncount(N) }}</p>
+  <p>Ncount: {{ argStore.Ncount(Num) }}</p>
   <br />
 
   <div class="row">
