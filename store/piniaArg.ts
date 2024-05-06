@@ -5,8 +5,6 @@ import { defineStore } from "pinia";
 
 export const useArgStore = defineStore("argStore", () => {
   const count = ref(0);
-
-  // computer
   const doubleCount = computed(() => count.value * 2);
 
   const Ncount = (n: number) => {

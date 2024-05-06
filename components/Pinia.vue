@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useArgStore } from "@/store/arg";
+import { useArgStore } from "@/store/piniaArg";
 
 const Num = ref(3);
 

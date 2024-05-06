@@ -25,5 +25,6 @@ logs
 _samples
 _ts_vue
 _nuxt-master
+_vuex
 memo.md
 prisma
